@@ -8,10 +8,11 @@ def load_text_file():
         return f.read()
 
 
-def get_most_frequent_words(text, counter):
-    return dict(Counter(text.lower().split()).most_common(counter))
+def get_most_frequent_words(text):
+    top_words = 10
+    return dict(Counter(text.lower().split()).most_common(top_words))
 
 
 if __name__ == '__main__':
     text_from_file = load_text_file()
-    print(get_most_frequent_words(text_from_file, 10))
+    print(get_most_frequent_words(text_from_file))
