@@ -1,20 +1,16 @@
 # Frequency Analysis of Words
 
 This program allows to analyze word frequency in text file. 
-Can be used with any language as long as text file is encoding is 'utf-8'
+Pass text file you want to calculate to script. 
 
 # Example of usage
 
 ```python
-import lang_frequency as lf
-
-text_from_file = lf.load_data()
-print(lf.get_most_frequent_words(text_from_file))
+python lang_frequency.py <path_to_file>
 ```
 
 Output:
 ```bash
-Input path to file: Hamlet.txt
 {'the': 1101, 'and': 912, 'to': 752, 'of': 692, 'a': 542, 'i': 532, 'you': 512, 'my': 503, 'in': 401, 'it': 368}
 ```
 # Project Goals

@@ -20,6 +20,6 @@ if __name__ == '__main__':
         path_to_file = sys.argv[1]
         data_from_file = load_data_from_file(path_to_file)
         frequent_words = get_most_frequent_words(data_from_file)
-        print(frequent_words)
+        print('10 frequent words in the file:\n{}'.format(frequent_words))
     except IndexError:
         print('Missing arguments to script.')
