@@ -4,11 +4,16 @@ from collections import Counter
 
 
 def load_text_file(path_to_file):
-    with open(path_to_file, 'r') as f:
-        return re.sub(r'[^\w\s]', '', f.read().lower())
+    try:
+        with open(path_to_file, 'r') as f:
+            return re.sub(r'[^\w\s]', '', f.read().lower())
+    except (FileNotFoundError, IOError):
+        return None
 
 
 def get_most_frequent_words(text):
+    if text is None:
+        return 'Файл не существует или имеет неверный фаормат.'
     top_words = 10
     return dict(Counter(text.lower().split()).most_common(top_words))
 
