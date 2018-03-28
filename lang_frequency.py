@@ -1,11 +1,11 @@
-
+import sys
+import re
 from collections import Counter
 
 
-def load_text_file():
-    path_to_text_file = input('Input path to file: ')
-    with open(path_to_text_file, 'r') as f:
-        return f.read()
+def load_text_file(path_to_file):
+    with open(path_to_file, 'r') as f:
+        return re.sub(r'[^\w\s]', '', f.read().lower())
 
 
 def get_most_frequent_words(text):
@@ -14,5 +14,6 @@ def get_most_frequent_words(text):
 
 
 if __name__ == '__main__':
-    text_from_file = load_text_file()
+    text_from_file = load_text_file(sys.argv[1])
+    print('10 most fequnent words in given file:')
     print(get_most_frequent_words(text_from_file))
