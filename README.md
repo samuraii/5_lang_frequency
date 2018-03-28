@@ -12,8 +12,17 @@ python lang_frequency.py <path_to_file>
 
 Output:
 ```bash
-10 most fequnent words in given file:
-{'the': 1101, 'and': 912, 'to': 752, 'of': 692, 'a': 542, 'i': 532, 'you': 512, 'my': 503, 'in': 401, 'it': 368}
+Кол-во Слово
+  3    чтобы
+  3    в
+  2    смысл
+  1    текст
+  1    это
+  1    упорядоченный
+  1    набор
+  1    слов
+  1    предназначенный
+  1    для
 ```
 # Project Goals
 
