@@ -12,17 +12,17 @@ python lang_frequency.py <path_to_file>
 
 Output:
 ```bash
-Кол-во Слово
-  3    чтобы
-  3    в
-  2    смысл
-  1    текст
-  1    это
-  1    упорядоченный
-  1    набор
-  1    слов
-  1    предназначенный
-  1    для
+# count word
+0 hello  4
+1  yes   4
+2  nice  3
+3  fuck  2
+4  true  2
+5  ice   2
+6   no   1
+7 table  1
+8  kill  1
+9  love  1
 ```
 # Project Goals
 
