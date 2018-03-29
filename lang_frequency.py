@@ -17,9 +17,9 @@ def get_most_frequent_words(text, words_count=10):
 
 
 def print_words(words):
-    print('#', 'count', 'word')
-    for number, (word, amount) in enumerate(words):
-        print('{0:<1} {1:^6} {2}'.format(number + 1, word, amount))
+    print('#', 'word', 'count')
+    for number, (word, amount) in enumerate(words, 1):
+        print('{0:<1} {1:^6} {2}'.format(number, word, amount))
 
 if __name__ == '__main__':
     try:
